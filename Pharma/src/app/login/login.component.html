@@ -1,0 +1,48 @@
+<form class="border p-5 rounded-4" [formGroup]="loginForm" (ngSubmit)="loginSubmitted()">
+    <div class="row g-0">
+        <div class="col text-center p-2 mb-3 bg-light">
+            <span class="fs-3">Login</span>
+        </div>
+    </div>
+    <div>
+        <div class="col mb-3">
+            <label for="PhoneNo" class="form-label">Contact</label>
+            <input type="text" class="form-control" id="PhoneNo" formControlName="PhoneNo">
+            <div class="form-text text-danger"
+                *ngIf="PhoneNo.errors?.['required'] && (PhoneNo.touched || PhoneNo.dirty)">
+                Contact Required.</div>
+            <div class="form-text text-danger"
+                *ngIf="PhoneNo.errors?.['pattern'] && (PhoneNo.touched || PhoneNo.dirty)">
+                Contact is Invalid.</div>
+            <div class="form-text text-danger"
+                *ngIf="PhoneNo.errors?.['minlength'] && (PhoneNo.touched || PhoneNo.dirty)">
+                Contact is Short</div>
+            <div class="form-text text-danger"
+                *ngIf="PhoneNo.errors?.['maxlength'] && (PhoneNo.touched || PhoneNo.dirty)">
+                Contact is Long.</div>
+        </div>
+    </div>
+    <div>
+        <div class="col mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" formControlName="password">
+            <div class="form-text text-danger"
+                *ngIf="Password.errors?.['required'] && (Password.touched || Password.dirty)">
+                Password is Required.</div>
+            <div class="form-text text-danger" *ngIf="Password.errors?.['minlength'] || Password.errors?.['maxlength'] 
+                  && (Password.touched || Password.dirty)">
+                Password should be at least 6 and at max 15 character long.</div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="d-grid">
+                <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary">Login</button>
+            </div>
+        </div>
+    </div>
+    <p class="message">Not registered? <a href="Register">Create an account</a></p>
+
+</form>

@@ -1,0 +1,101 @@
+section{
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-color: #eee;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.container{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+.container .About{
+    position: absolute;
+    padding: 70px 50px;
+    margin-left: 100px;
+    width: calc(100% - 150px);
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+
+.container .About-form{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80%);
+    background: linear-gradient(120deg,#00bfff 40%,#663399);
+    margin-left: -170px;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.About-form img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+    height: 250px; /* Maintain aspect ratio */
+    display: block; /* Remove extra spacing below the image */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+
+.container .About h3{
+    font-size: 3.5rem;
+    line-height: 1.8;
+    color: var(--black);
+    padding-bottom: 5%;
+}
+
+.container .About p{
+    font-size: 90%;
+    line-height: 1.8;
+    color: var(--light-color);
+    padding: 1rem 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.btn{
+    border: 1px solid var(--black);
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 27%;
+    margin-right: 30%;
+    position: absolute;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+
+}
+
+.btn:hover{
+    background: linear-gradient(120deg,#fab2ff 40%,#663399);
+    color: #fff;
+
+}
+
+.container .About span{
+    color: var(--dark-moderate-violet);
+    font-weight: bold;
+}

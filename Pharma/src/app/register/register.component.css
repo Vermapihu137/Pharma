@@ -1,0 +1,109 @@
+/* Header styling (same as home page) */
+.header-syle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background: #e33871 ;
+  }
+  
+  .p-2060 {
+    padding: 20px 60px ;
+  }
+  
+  .white {
+    color: #ffffff ;
+  }
+  
+  /* Container styling for registration page */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+  }
+  
+  /* Form styling */
+  form {
+    background-color: #f1eff0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Form header styling (similar to home page) */
+  form .fs-3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Label styling (you can customize this further) */
+  form label {
+    font-weight: bold;
+  }
+  
+  /* Input field styling (you can customize this further) */
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Error message styling (you can customize this further) */
+  form .form-text.text-danger {
+    color: #ff0000;
+    font-size: 14px;
+  }
+  
+  /* Submit button styling (you can customize this further) */
+  form button.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Submit button hover effect (similar to home page) */
+  form button.btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Success message styling (similar to home page) */
+  form .text-success {
+    color: #28a745;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Error message styling (similar to home page) */
+  form .text-danger {
+    color: #ff0000;
+    font-size: 14px;
+  }
+  
+  /* Center the form on the page (similar to home page) */
+  form {
+    margin: 0 auto;
+  }
+  
+  /* Center the form header text (similar to home page) */
+  form .fs-3 {
+    text-align: center;
+  }
+  

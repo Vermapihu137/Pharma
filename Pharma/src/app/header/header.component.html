@@ -1,0 +1,29 @@
+<div class="banner">
+    <div class="wrapper">
+        <div class="content">
+            <h2>Pharma Care</h2>
+            <p>"It is easy to get a thousand Prescriptions, but hard to get one single remedy."</p>
+            <div class="btn">
+                <a href="About">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+    const X = () => {
+        const menu = document.querySelector('.bar');
+        const nav = document.querySelector('.menu');
+
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('bar-active');
+            nav.classList.toggle('nav-active');
+        });
+    }
+    X();
+</script>
